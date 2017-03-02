@@ -1,6 +1,6 @@
-/*------------------------------------*\
-  #ELEMENTS - QUOTES
-\*------------------------------------*/
+/* ==========================================================================
+   #QUOTES
+   ========================================================================== */
 
 q {
   font-style: italic;
@@ -15,20 +15,16 @@ figcaption {
   color: palette(gray);
 }
 
-
-
-
 blockquote {
   margin-top: $spacing-unit;
   margin-bottom: $spacing-unit;
   position: relative;
-  
+
   footer {
     @include font-weight(bold);
     @include font-size(small);
     font-style: normal;
-  
-    
+
     &:before {
       content: '-';
       position: absolute;

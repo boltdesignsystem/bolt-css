@@ -1,12 +1,12 @@
-/*------------------------------------*\
-  #ELEMENTS - LINKS
-\*------------------------------------*/
+/* ==========================================================================
+   #LINKS
+   ========================================================================== */
 
 a {
   color: palette(blue);
   text-decoration: none;
-  transition: color .3s ease;
-  
+  transition: color 0.3s ease;
+
   &:focus,
   &:hover {
     text-decoration: underline;

@@ -1,10 +1,10 @@
-/*------------------------------------*\
-  #FORM ELEMENTS
-\*------------------------------------*/
+/* ==========================================================================
+   #FORM ELEMENTS
+   ========================================================================== */
 
 input, select, textarea {
   @include font-size(base);
-  transition: all .1s ease;
+  transition: all 0.1s ease;
   background-color: palette(gray, lightest);
   border: 1px solid palette(gray, lighter);
   border-radius: 3px;
@@ -21,14 +21,15 @@ input, select, textarea {
 }
 
 label {
-  font-weight: bold;
+  font-weight: @include font-weight(bold);
+
   @include font-size(small);
 }
 
-::-webkit-input-placeholder /* Chrome/Opera/Safari */,
-::-moz-placeholder /* Firefox 19+ */,
-:-ms-input-placeholder /* IE 10+ */,
-:-moz-placeholder /* Firefox 18- */, {
+::-webkit-input-placeholder, /* Chrome/Opera/Safari */
+::-moz-placeholder, /* Firefox 19+ */
+:-ms-input-placeholder, /* IE 10+ */
+:-moz-placeholder { /* Firefox 18- */
   color: palette(gray, dark);
   opacity: 1;
 }
