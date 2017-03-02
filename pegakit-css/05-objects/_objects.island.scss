@@ -1,6 +1,6 @@
-/*------------------------------------*\
-    #ISLAND
-\*------------------------------------*/
+/* ==========================================================================
+   #ISLAND
+   ========================================================================== */
 
 /**
  * Simple, boxed off content, as per: csswizardry.com/2011/10/the-island-object
@@ -19,7 +19,7 @@
   padding: $spacing-unit;
   display: block;
   width: 100%;
-  
+
   > :last-child {
     margin-bottom: 0;
   }
@@ -42,7 +42,6 @@
 %o-island--large {
   padding: $spacing-unit-large;
 }
-
 
 
 /**

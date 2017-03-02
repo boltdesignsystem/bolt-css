@@ -7,22 +7,6 @@
     'stylelint-scss',
   ],
   rules: {
-    'at-rule-empty-line-before': [
-      'always',
-      {
-        except: [
-          'blockless-after-blockless',
-          'first-nested',
-        ],
-        ignore: [
-          'after-comment'
-        ],
-        'ignoreAtRules': [
-          'else',
-          'return'
-        ]
-      },
-    ],
     'at-rule-name-case': 'lower',
     'at-rule-semicolon-newline-after': 'always',
     'block-closing-brace-newline-after': [
@@ -51,7 +35,7 @@
     'comment-no-empty': true,
     'comment-whitespace-inside': 'always',
     'declaration-bang-space-after': 'never',
-    'declaration-bang-space-before': 'always',
+    
     'declaration-block-no-duplicate-properties': [
       true,
       {
@@ -127,11 +111,12 @@
       'always-multi-line',
       {
         except: [
-          'first-nested',
-          'inside-block-and-after-rule'
+          'inside-block-and-after-rule',
+          'first-nested'
         ],
         ignore: [
           'after-comment',
+          'inside-block'
         ],
       },
     ],

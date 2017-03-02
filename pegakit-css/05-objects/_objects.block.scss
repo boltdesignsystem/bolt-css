@@ -17,76 +17,61 @@ $block-gutter--huge:     $spacing-unit * 4    !default;
 
 .o-block,
 %o-block {
-    display: block;
-}
-
-  .o-block__image,
-  %o-block__image {
-    margin-bottom: $block-gutter;
-
-  /**
-    * No space between the image and the text content.
-    */
-    .o-block--flush > &,
-    %o-block--flush > & {
-      margin-bottom: 0;
-    }
-
-  /**
-    * Tiny space between the image and the text content.
-    */
-    .o-block--tiny > &,
-    %o-block--tiny > & {
-      margin-bottom: $block-gutter--tiny;
-    }
-
-  /**
-    * Small space between the image and the text content.
-    */
-    .o-block--small > &,
-    %o-block--small > & {
-      margin-bottom: $block-gutter--small;
-    }
-
-  /**
-    * Large space between the image and the text content.
-    */
-    .o-block--large > &,
-    %o-block--large > & {
-      margin-bottom: $block-gutter--large;
-    }
-
-  /**
-    * Huge space between the image and the text content.
-    */
-    .o-block--huge > &,
-    %o-block--huge > & {
-      margin-bottom: $block-gutter--huge;
-    }
+  display: block;
 }
 
 
-/**
-  * Text-content.
-  */
+.o-block__image,
+%o-block__image {
+  margin-bottom: $block-gutter;
+
+  // No space between the image and the text content.
+  .o-block--flush > &,
+  %o-block--flush > & {
+    margin-bottom: 0;
+  }
+
+  // Tiny space between the image and the text content.
+  .o-block--tiny > &,
+  %o-block--tiny > & {
+    margin-bottom: $block-gutter--tiny;
+  }
+
+  // Small space between the image and the text content.
+  .o-block--small > &,
+  %o-block--small > & {
+    margin-bottom: $block-gutter--small;
+  }
+
+  // Large space between the image and the text content.
+  .o-block--large > &,
+  %o-block--large > & {
+    margin-bottom: $block-gutter--large;
+  }
+
+  // Huge space between the image and the text content.
+  .o-block--huge > &,
+  %o-block--huge > & {
+    margin-bottom: $block-gutter--huge;
+  }
+}
+
+
+// Text-content.
 .o-block__body,
 %o-block__body {
   display: block;
 }
 
 
-/**
-  * Right-aligned blocks.
-  */
+// Right-aligned blocks.
 .o-block--right,
 %o-block--right {
   text-align: right;
 }
 
 
-/**
-  * Center-aligned blocks.
-  */
+// Center-aligned blocks.
 .o-block--center,
 %o-block--center {
   text-align: center;

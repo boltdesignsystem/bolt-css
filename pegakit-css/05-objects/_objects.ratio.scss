@@ -1,17 +1,20 @@
+/* ==========================================================================
+   #RATIO OBJECT
+   ========================================================================== */
+
 .o-ratio {
   position: relative;
   width: 100%;
   overflow: hidden;
   display: block; //In case it's applied to a non-block element.
-  
+
   &:after {
     content: '';
     display: block;
     height: 0;
     width: 100%;
-    /* 16:9 = 56.25% = calc(9 / 16 * 100%) */
   }
-  
+
   > *,
   > .o-ratio__item.o-ratio__item.o-ratio__item {
     position: absolute;
@@ -29,6 +32,7 @@
 .o-ratio--16x9:after {
   @include aspect-ratio(16,9);
 }
+
 .o-ratio--2x1:after {
   @include aspect-ratio(16,8);
 }

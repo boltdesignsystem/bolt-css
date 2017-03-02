@@ -1,6 +1,6 @@
-/*------------------------------------*\
-    #FLAG (AKA MEDIA) OBJECT
-\*------------------------------------*/
+/* ==========================================================================
+   #FLAG (AKA MEDIA OBJECT)
+   ========================================================================== */
 
 $flag-gutter:         $spacing-unit !default;
 $flag-gutter--small:  $spacing-unit / 2 !default;
@@ -11,7 +11,7 @@ $flag-gutter--large:  $spacing-unit * 2 !default;
 .o-flag {
   display: table;
   width: 100%;
-  
+
   &%o-flag--rev,
   &.o-flag--rev {
     direction: rtl;
@@ -19,12 +19,11 @@ $flag-gutter--large:  $spacing-unit * 2 !default;
 }
 
 
-
 %o-flag__body,
 .o-flag__body {
   display: table-cell;
   vertical-align: top;
-  
+
   %o-flag--rev &,
   .o-flag--rev & {
     direction: ltr;
@@ -36,7 +35,7 @@ $flag-gutter--large:  $spacing-unit * 2 !default;
   padding-right: $spacing-unit;
   display: table-cell;
   vertical-align: top;
-  
+
   %o-flag--rev &,
   .o-flag--rev & {
     padding-right: 0;
@@ -48,13 +47,13 @@ $flag-gutter--large:  $spacing-unit * 2 !default;
 .o-flag__body,
 %o-flag__image,
 .o-flag__image {
-  
+
   // Use the --center modifier to vertically align
   %o-flag--center &,
   .o-flag--center & {
     vertical-align: middle;
   }
-  
+
   // Use --bottom to align bottom edges of the elements
   %o-flag--bottom &,
   .o-flag--bottom & {
@@ -68,35 +67,25 @@ $flag-gutter--large:  $spacing-unit * 2 !default;
 }
 
 
-
-
-
 /**
  * Large flag objects.
  */
-
 .o-flag--large,
 %o-flag--large {
+  > .o-flag__image,
+  > %o-flag__image {
+    padding-right: $flag-gutter--large;
+  }
 
+  // Large reversed flag objects.
+  &.o-flag--rev,
+  &%o-flag--rev {
     > .o-flag__image,
     > %o-flag__image {
-      padding-right: $flag-gutter--large;
+      padding-right: 0;
+      padding-left: $flag-gutter--large;
     }
-
-    /**
-     * Large reversed flag objects.
-     */
-
-    &.o-flag--rev,
-    &%o-flag--rev {
-
-        > .o-flag__image,
-        > %o-flag__image {
-            padding-right: 0;
-            padding-left: $flag-gutter--large;
-        }
-
-    }
+  }
 }
 
 // 

@@ -1,16 +1,16 @@
-/*------------------------------------*\
-  #LAYOUT
-\*------------------------------------*/
+/* ==========================================================================
+   #GRID
+   ========================================================================== */
 
 %o-grid,
 .o-grid {
-  margin:  0;
+  margin: 0;
   padding: 0;
   list-style: none;
   margin-left: -$spacing-unit;
   letter-spacing: -0.32em;
   flex: 1 1 auto; //Automatically auto fill any available space, in case a grid is nested inside of a flexbox-friendly parent container.
-  
+
   // //Fallback in case some piece of inner content inside an o-grid container isn't in an o-grid__item. This should prevent text from breaking in case this should ever occur.
   // > *:not(.o-grid__item){
   //   letter-spacing: normal;
@@ -26,24 +26,18 @@
   letter-spacing: normal;
 }
 
-  
 
-  
 %o-grid--rev,
 .o-grid--rev {
   direction: rtl;
-  
+
   > %o-grid__item,
   > .o-grid__item {
     direction: ltr;
   }
 }
-  
-  
 
 
-  
-  
 /**
  * Gutterless grids have all the properties of regular grids, minus any spacing.
  * Extends `.o-grid`.
@@ -65,14 +59,13 @@
  */
 %o-grid--center,
 .o-grid--center {
-    text-align:center;
-    
-    > %o-grid__item,
-    > .o-grid__item {
-      text-align:left;
-    }
-}
+  text-align: center;
 
+  > %o-grid__item,
+  > .o-grid__item {
+    text-align: left;
+  }
+}
 
 
 /**
@@ -81,27 +74,24 @@
  */
 %o-grid--middle,
 .o-grid--middle {
-  
   &.o-grid--flex,
   &%o-grid--flex {
     align-items: center;
   }
 
-    > %o-grid__item,
-    > .o-grid__item {
-        vertical-align: middle;
-    }
+  > %o-grid__item,
+  > .o-grid__item {
+    vertical-align: middle;
+  }
 }
 
 %o-grid--bottom,
 .o-grid--bottom {
-    
-    > %o-grid__item,
-    > .o-grid__item {
-        vertical-align: bottom;
-    }
+  > %o-grid__item,
+  > .o-grid__item {
+    vertical-align: bottom;
+  }
 }
-
 
 
 /**
@@ -109,15 +99,13 @@
  */
 %o-grid--right,
 .o-grid--right {
-  text-align:right;
-  
+  text-align: right;
+
   > %o-grid__item,
   > .o-grid__item {
-    text-align:left;
+    text-align: left;
   }
 }
-
-
 
 
 .o-grid__item--middle {
@@ -137,15 +125,10 @@
 }
 
 
-
-
-
-
-
 %o-grid--xsmall,
 .o-grid--xsmall {
   margin-left: -$spacing-unit-xsmall;
-  
+
   > %o-grid__item,
   > .o-grid__item {
     padding-left: $spacing-unit-xsmall;
@@ -155,7 +138,7 @@
 %o-grid--small,
 .o-grid--small {
   margin-left: -$spacing-unit-small;
-  
+
   > %o-grid__item,
   > .o-grid__item {
     padding-left: $spacing-unit-small;
@@ -168,16 +151,16 @@
 %o-grid--large,
 .o-grid--large {
   margin-left: -$spacing-unit-medium;
-  
-  @include respond-to(small){
+
+  @include respond-to(small) {
     margin-left: -$spacing-unit-large;
   }
-  
+
   > %o-grid__item,
   > .o-grid__item {
     padding-left: $spacing-unit-medium;
-    
-    @include respond-to(small){
+
+    @include respond-to(small) {
       padding-left: $spacing-unit-large;
     }
   }
@@ -189,21 +172,20 @@
 %o-grid--xlarge,
 .o-grid--xlarge {
   margin-left: -$spacing-unit-large;
-  
-  @include respond-to(small){
+
+  @include respond-to(small) {
     margin-left: -$spacing-unit-xlarge;
   }
-  
+
   > %o-grid__item,
   > .o-grid__item {
     padding-left: $spacing-unit-large;
-    
-    @include respond-to(small){
+
+    @include respond-to(small) {
       padding-left: $spacing-unit-xlarge;
     }
   }
 }
-
 
 
 %o-grid--flex,
@@ -219,8 +201,8 @@
     // flex: 1 1 30%;
     flex-direction: column;
   }
-  
-  
+
+
   // // .o-grid__item:nth-last-child(n+5), .o-grid__item:nth-last-child(n+5) ~ .o-grid__item {
   // // 
   // // }

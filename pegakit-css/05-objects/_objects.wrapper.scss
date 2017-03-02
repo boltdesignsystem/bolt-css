@@ -1,6 +1,6 @@
-/*------------------------------------*\
-    #WRAPPER
-\*------------------------------------*/
+/* ==========================================================================
+   #WRAPPER OBJECT
+   ========================================================================== */
 
 %o-wrapper,
 .o-wrapper {
@@ -8,10 +8,5 @@
   margin-left: auto;
   margin-right: auto;
   padding-right: $spacing-unit;
-  padding-left:  $spacing-unit;
+  padding-left: $spacing-unit;
 }
-
-// //TODO: Remove this hack.
-// .node-type-flex-page .block-system {
-//   padding: 0 $spacing-unit;
-// }
