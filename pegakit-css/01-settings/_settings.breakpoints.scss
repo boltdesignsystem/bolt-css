@@ -1,19 +1,20 @@
 /* ------------------------------------ *\
   #BREAKPOINTS
 \* ------------------------------------ */
-// @import './node_modules/breakpoint-sass/stylesheets/_breakpoint';
-@import 'breakpoint-sass/stylesheets/_breakpoint';
+
+@import 'breakpoint-sass';
 
 $breakpoints: (
-    'tiny'          '480px',
-    'small'         '720px',
-    'medium'        '1024px',
-    'large'         '1200px'
+  'tiny'          '480px',
+  'small'         '720px',
+  'medium'        '1024px',
+  'large'         '1200px'
 );
 
 @each $breakpoint in $breakpoints {
-  $alias:     nth($breakpoint, 1);
+  $alias: nth($breakpoint, 1);
   $condition: nth($breakpoint, 2);
+
   @include add-breakpoint(quote($alias), unquote($condition));
 }
 

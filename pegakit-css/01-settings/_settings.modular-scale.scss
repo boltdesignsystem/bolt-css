@@ -6,9 +6,10 @@
   * Typography sizes based off of 1.2 MS Scale with a 16px base.
   * http://www.modularscale.com/?16&px&1.2&sass&text
   */
-  
+
 $ms-base: 1rem;
 $ms-ratio: 1.2;
+
 @import 'modularscale-sass/stylesheets/modular-scale';
 
 $modular-scale: (
