@@ -1,0 +1,7 @@
+/* ------------------------------------ *\
+  #ELEMENTS - SECTIONS
+\* ------------------------------------ */
+
+section:not([class]) + section:not([class]) {
+  margin-top: $spacing-unit;
+}

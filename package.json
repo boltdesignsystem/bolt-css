@@ -1,0 +1,28 @@
+{
+  "name": "pegakit-css",
+  "version": "0.0.0",
+  "description": "PegaKit's site-agnostic CSS Framework core. Used to built PegaKit's UI Components.",
+  "main": "pegakit-css/pegakit-css.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pega-digital/pegakit-css.git"
+  },
+  "keywords": [
+    "pegakit",
+    "css",
+    "framework",
+    "itcss",
+    "bem",
+    "sass",
+    "oocss"
+  ],
+  "author": "Salem Ghoweri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pega-digital/pegakit-css/issues"
+  },
+  "homepage": "https://github.com/pega-digital/pegakit-css#readme"
+}

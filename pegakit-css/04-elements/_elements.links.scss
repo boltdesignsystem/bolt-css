@@ -1,0 +1,15 @@
+/*------------------------------------*\
+  #ELEMENTS - LINKS
+\*------------------------------------*/
+
+a {
+  color: palette(blue);
+  text-decoration: none;
+  transition: color .3s ease;
+  
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+    color: palette(blue, dark);
+  }
+}

@@ -1,0 +1,11 @@
+/*------------------------------------*\
+    #SVG ICON SPRITE IN CSS
+\*------------------------------------*/
+
+$images_path:     '/images/';
+$svg_sprite_name: 'icons.svg';
+
+
+@function svg-icon($name){
+  @return unquote('url("' + $images_path + $svg_sprite_name + '#' + $name + '")')
+}

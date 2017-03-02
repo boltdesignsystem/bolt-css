@@ -1,0 +1,14 @@
+/*------------------------------------*\
+    #BARE LIST
+\*------------------------------------*/
+
+/**
+ * The bare-list object simply remove default bullets and spacing.
+ */
+
+.o-bare-list,
+%o-bare-list {
+  margin:  0;
+  padding: 0;
+  list-style: none;
+}

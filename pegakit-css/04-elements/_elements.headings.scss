@@ -1,0 +1,42 @@
+/*------------------------------------*\
+  #ELEMENTS - HEADINGS
+\*------------------------------------*/
+
+h1, h2 {
+  @include font-family('heading');
+}
+
+h1, h2, h4, h5, h6 {
+  @include font-weight('light');
+  line-height: normal; //Fallback to reasonable defaults, just in case any of our headings might be trying to inherit the line-height 1.5 or so on the body / html tag.
+}
+
+h3 {
+  @include font-weight(normal);
+  line-height: normal;
+}
+
+
+h1 {
+  @include font-size(xlarge);
+}
+
+h2 {
+  @include font-size(large);
+}
+
+h3 {
+  @include font-size(medium);
+}
+
+h4 {
+  @include font-size(base);
+}
+
+h5 {
+  @include font-size(base);
+}
+
+h6 {
+  @include font-size(base);
+}

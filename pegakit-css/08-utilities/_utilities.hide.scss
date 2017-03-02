@@ -1,0 +1,52 @@
+/*------------------------------------*\
+  #RESPONSIVE HIDE UTILITIES
+\*------------------------------------*/
+
+
+.u-hide {
+  display: none !important;
+}
+
+
+
+
+@include respond-to('tiny'){
+  .u-hide\@tiny {
+    display: none !important;
+  }
+}
+
+@include respond-to('only-tiny'){
+  .u-hide\@only-tiny {
+    display: none !important;
+  }
+}
+
+
+
+@include respond-to('small'){
+  .u-hide\@small {
+    display: none !important;
+  }
+}
+
+
+@include respond-to('only-small'){
+  .u-hide\@only-small {
+    display: none !important;
+  }
+}
+
+
+
+@include respond-to('medium'){
+  .u-hide\@medium {
+    display: none !important;
+  }
+}
+
+@include respond-to('large'){
+  .u-hide\@large {
+    display: none !important;
+  }
+}
