@@ -67,7 +67,7 @@
     'declaration-colon-space-before': 'never',
     'declaration-no-important': true,
     'font-family-name-quotes': 'always-where-recommended',
-    'font-weight-notation': 'named-where-possible',
+    'font-weight-notation': 'numeric',
     'function-calc-no-unspaced-operator': true,
     
     'function-comma-newline-before': 'never-multi-line',
@@ -77,6 +77,7 @@
     'function-name-case': 'lower',
     'function-parentheses-space-inside': 'never-single-line',
     'function-url-quotes': 'always',
+    
     'function-whitespace-after': 'always',
     indentation: [
       2,
@@ -148,7 +149,7 @@
     'selector-pseudo-class-no-unknown': true,
     'selector-pseudo-class-parentheses-space-inside': 'never',
     'selector-pseudo-element-case': 'lower',
-    'selector-pseudo-element-colon-notation': 'double',
+    'selector-pseudo-element-colon-notation': 'single',
     'selector-pseudo-element-no-unknown': true,
     'selector-type-case': 'lower',
     'selector-type-no-unknown': true,
@@ -162,7 +163,6 @@
       'lower',
       {
         ignoreKeywords: [
-          'Sky',
           'Text',
           'Helvetica',
           'Arial',

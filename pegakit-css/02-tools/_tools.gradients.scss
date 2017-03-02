@@ -1,6 +1,6 @@
-/* ------------------------------------ *\
-    #BACKGROUND GRADIENT GENERATORS
-\* ------------------------------------ */
+/* ==========================================================================
+   #BACKGROUND GRADIENT GENERATORS
+   ========================================================================== */
 
 /**
   * Linear gradient generator. Takes the name of the "swatch" you pass
@@ -13,8 +13,9 @@
   $end: map-get($gradient, 'end');
 
   @if ($important == 'important') {
-    background-image: linear-gradient(45deg, $start, $end) !important;
-  } @else {
+    background-image: linear-gradient(45deg, $start, $end) + unquote('!important');
+  }
+  @else {
     background-image: linear-gradient(45deg, $start, $end);
   }
 }
@@ -38,8 +39,9 @@
   $end: map-get($gradient, 'end');
 
   @if ($important == 'important') {
-    background-image: radial-gradient(circle, $start, $end) !important;
-  } @else {
+    background-image: radial-gradient(circle, $start, $end) unquote('!important');
+  }
+  @else {
     background-image: radial-gradient(circle, $start, $end);
   }
 }

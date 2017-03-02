@@ -1,15 +1,15 @@
-/*------------------------------------*\
-  #VISUALLYHIDDEN MIXIN
-\*------------------------------------*/
+/* ==========================================================================
+   #VISUALLYHIDDEN MIXIN
+   ========================================================================== */
 
-@mixin visuallyhidden($focusable: true){
+@mixin visuallyhidden($focusable: true) {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
   height: 1px;
   width: 1px;
-  
-  @if ($focusable == true){
+
+  @if ($focusable == true) {
     &:focus {
       position: relative;
       overflow: visible;
