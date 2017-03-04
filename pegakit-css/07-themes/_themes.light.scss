@@ -1,28 +1,28 @@
-/*----------------------------------*\
-  #LIGHT THEME
-\*----------------------------------*/
+/* ==========================================================================
+   #LIGHT THEME
+   ========================================================================== */
 
 /**
-  * When you have a light background or background image and want to have 
+  * When you have a light background or background image and want to have
   * darker text inside that container.
   */
 
 .t-light {
   color: palette(black);
   background-color: palette(gray, lightest);
-  
+
   a {
     color: palette(black);
-    
+
     &:hover {
       color: palette(gray);
-      text-diecoration: underline;
+      text-decoration: underline;
     }
-    
+
     &:focus,
     &:active {
       color: palette(gray, light);
-      text-diecoration: underline;
+      text-decoration: underline;
     }
   }
 }

@@ -1,6 +1,6 @@
-/*------------------------------------*\
-  #THEMES
-\*------------------------------------*/
+/* ==========================================================================
+   #THEMES
+   ========================================================================== */
 
 /**
   * Apply slight variations to background color and text color.
@@ -18,11 +18,11 @@
   * Violet...............`Violet` Color Theme
   * Light.................A basic light theme for content contrast.
   * Dark..................A basic dark theme for content contrast.
-  * Gradients.............Automatically generate themes based on color 
+  * Gradients.............Automatically generate themes based on color
   *                       gradients.
   */
 
-[class^="t-"] {
+[class^='t-'] {
   * {
     color: inherit;
   }
