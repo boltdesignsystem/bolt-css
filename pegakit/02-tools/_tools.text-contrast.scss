@@ -1,0 +1,14 @@
+/* ==========================================================================
+   #TEXT CONTRAST
+   ========================================================================== */
+
+/** my contrast text awesome description */
+
+@function text-contrast($color) {
+  @if (lightness($color) > 50) {
+    @return palette(black); // Lighter backgorund, return dark color
+  }
+  @else {
+    @return palette(white); // Darker background, return light color
+  }
+}

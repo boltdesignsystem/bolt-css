@@ -1,0 +1,24 @@
+/* ==========================================================================
+   #BUTTON-COLOR
+   ========================================================================== */
+
+/** Generate different background and border color button interaction states based on the primary color passed in **/
+
+@mixin button-color($color) {
+  color: text-contrast($color);
+  background-color: $color;
+  border-color: mix(black, $color, 25%);
+
+  &:hover {
+    color: text-contrast($color);
+    background-color: mix(black, $color, 15%);
+    border-color: mix(black, $color, 40%);
+  }
+
+  &:focus,
+  &:active {
+    color: text-contrast($color);
+    background-color: mix(black, $color, 30%);
+    border-color: mix(black, $color, 55%);
+  }
+}

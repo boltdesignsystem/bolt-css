@@ -1,0 +1,11 @@
+/* ==========================================================================
+   #VENDOR
+   ========================================================================== */
+
+/**
+  * Misc Sass vendor dependencies that don't output code AND aren't dependent
+  * on any setting configurations (like Modularscale Sass, for ex.)
+  */
+
+@import 'sassy-maps/sass/sassy-maps';
+@import 'sassy-maps/sass/memo'; // Performance gains via Memoization

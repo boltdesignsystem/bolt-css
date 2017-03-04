@@ -4,8 +4,8 @@
   "description": "PegaKit's site-agnostic CSS Framework core. Used to built PegaKit's UI Components.",
   "main": "pegakit-css/pegakit-css.scss",
   "scripts": {
-    "lint": "stylelint '*/05-objects/*.scss' --syntax scss",
-    "sass": "node-sass --output-style --include-path ./pegakit-css/ -o demo/dist demo/scss/main.scss",
+    "lint": "stylelint '*/**/*.scss' --syntax scss",
+    "sass": "node-sass --output-style compressed --source-map true --include-path ./node_modules/ -o demo/dist ./pegakit/pegakit.scss",
     "autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers 'last 2 versions' 'ie 9-11' -r demo/dist/main.css",
     "build": "npm run lint && npm run sass && npm run autoprefixer && ncp demo/assets/ demo/dist/assets",
     "start": "npm run build && onchange '*/**/*.scss' -- npm run build",
@@ -35,6 +35,7 @@
     "breakpoint-sass": "^2.7.0",
     "modularscale-sass": "^2.1.1",
     "normalize-scss": "^5.0.3",
+    "sanitize.css": "^5.0.0",
     "sassy-maps": "at-import/Sassy-Maps#0.x.x",
     "stylelint-config-guidelines": "^1.1.5",
     "stylelint-selector-pattern": "0.0.1"

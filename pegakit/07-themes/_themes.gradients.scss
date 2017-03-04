@@ -1,0 +1,24 @@
+/* ==========================================================================
+   #GRADIENTS
+   ========================================================================== */
+
+$themeGradients: map-get($gradients, 'gradients');
+
+@each $gradient, $name in $themeGradients {
+  .t-#{$gradient} {
+    @include linear-gradient($gradient);
+    color: white;
+
+    a {
+      color: palette(white);
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: palette(white);
+      }
+    }
+  }
+}
+
+$gradients: jsonexport('gradients.sass.json', $gradients);
