@@ -1,0 +1,38 @@
+{
+  "name": "pegakit-css",
+  "homepage": "https://github.com/pega-digital/pegakit-css",
+  "authors": [
+    "Salem Ghoweri <salem.ghoweri@pega.com>"
+  ],
+  "description": "PegaKit's site-agnostic CSS Framework core. Used to built PegaKit's UI Components.",
+  "main": [
+    "pegakit/pegakit.scss"
+  ],
+  "keywords": [
+    "pegakit",
+    "scss",
+    "sass"
+    "css",
+    "bem",
+    "itcss",
+    "bemit",
+    "design-system",
+    "css-framework",
+    "ui-toolkit"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    ".bowerrc",
+    ".gitignore",
+    "gulpfile.js",
+    "package.json",
+    "sache.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pega-digital/components.buttons.git"
+  }
+}

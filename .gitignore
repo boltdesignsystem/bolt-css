@@ -3,12 +3,6 @@
 *.psd
 *.psb
 *.tmp
-*.map
-*/*.map
-#node_modules
-pegakit-css/*
-!pegakit-css/01-*
-!pegakit-css/02-*
-!pegakit-css/03-*
-!pegakit-css/04-*
-!pegakit-css/05-*
+!*.map
+!*/*.map
+node_modules

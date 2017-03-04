@@ -2,7 +2,7 @@
   "name": "pegakit-css",
   "version": "0.0.0",
   "description": "PegaKit's site-agnostic CSS Framework core. Used to built PegaKit's UI Components.",
-  "main": "pegakit-css/pegakit-css.scss",
+  "main": "pegakit/pegakit.scss",
   "scripts": {
     "lint": "stylelint '*/**/*.scss' --syntax scss",
     "sass": "node-sass --output-style compressed --source-map true --include-path ./node_modules/ -o demo/dist ./pegakit/pegakit.scss",

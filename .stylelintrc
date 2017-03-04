@@ -1,6 +1,6 @@
 {
   'ignoreFiles': [
-  
+    'demo/dist/pegakit.css'
   ],
   plugins: [
     'stylelint-selector-bem-pattern',
