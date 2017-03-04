@@ -33,6 +33,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pega-digital/components.buttons.git"
+    "url": "git+https://github.com/pega-digital/pegakit-css.git"
   }
 }
