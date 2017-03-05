@@ -1,6 +1,6 @@
 {
   "name": "pegakit-buttons",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The default Button component. Part of PegaKit&#39;s pre-packaged UI Toolkit.",
   "scripts": {
     "lint": "stylelint '*/**/*.scss' --syntax scss",
