@@ -1,16 +1,17 @@
 {
   "name": "pegakit-css",
-  "version": "0.0.0",
+  "version": "1.0.0-beta.1",
   "description": "PegaKit's site-agnostic CSS Framework core. Used to built PegaKit's UI Components.",
-  "main": "pegakit/pegakit.scss",
+  "main": "main.scss",
   "scripts": {
     "lint": "stylelint '*/**/*.scss' --syntax scss",
-    "sass": "node-sass --output-style compressed --source-map true --include-path ./bower_components/ -o demo/dist ./pegakit/pegakit.scss",
-    "autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers 'last 2 versions' 'ie 9-11' -r demo/dist/main.css",
-    "build": "npm run lint && npm run sass && npm run autoprefixer && ncp demo/assets/ demo/dist/assets",
+    "sass": "node-sass --output-style compressed --source-map true --include-path ./bower_components/ -o ./demo ./main.scss",
+    "autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers 'last 3 versions' 'ie 9-11' -r demo/main.css",
+    "build": "npm run lint && npm run sass && npm run autoprefixer",
     "start": "npm run build && onchange '*/**/*.scss' -- npm run build",
     "serve": "http-server demo",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "postinstall": "bower install && npm run build"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,9 @@
     "itcss",
     "bem",
     "sass",
-    "oocss"
+    "oocss",
+    "bemit",
+    "design system"
   ],
   "author": "Salem Ghoweri",
   "license": "MIT",
@@ -32,30 +35,27 @@
   },
   "homepage": "https://github.com/pega-digital/pegakit-css#readme",
   "dependencies": {
-    "breakpoint-sass": "^2.7.0",
-    "modularscale-sass": "^2.1.1",
-    "sanitize.css": "^5.0.0",
-    "sassy-maps": "at-import/Sassy-Maps#0.x.x",
-    "stylelint-config-guidelines": "^1.1.5",
-    "stylelint-selector-pattern": "0.0.1"
+    
   },
   "devDependencies": {
-    "eslint": "^3.15.0",
+    "autoprefixer": "^6.3.5",
+    "bower": "^1.8.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.9.0",
-    "pre-commit": "^1.2.2",
-    "stylelint": "^7.9.0",
-    "stylelint-scss": "^1.4.3",
-    "stylelint-selector-bem-pattern": "^1.0.0",
-    "autoprefixer": "^6.3.5",
+    "eslint": "^3.15.0",
     "http-server": "^0.9.0",
     "ncp": "^2.0.0",
     "node-sass": "^3.4.2",
     "onchange": "^2.2.0",
     "postcss-cli": "^2.5.1",
-    "lerna": "2.0.0-beta.38"
+    "pre-commit": "^1.2.2",
+    "stylelint-config-guidelines": "^1.1.5",
+    "stylelint-scss": "^1.4.3",
+    "stylelint-selector-bem-pattern": "^1.0.0",
+    "stylelint-selector-pattern": "0.0.1",
+    "stylelint": "^7.9.0"
   },
   "peerDependencies": {
     "stylelint": "^7.9.0",

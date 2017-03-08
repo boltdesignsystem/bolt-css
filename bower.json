@@ -1,8 +1,8 @@
 {
   "name": "pegakit-css",
-  "version": "0.0.0",
+  "version": "1.0.0-beta.1",
   "description": "PegaKit's site-agnostic CSS Framework core. Used to built PegaKit's UI Components.",
-  "main": "pegakit/pegakit.scss",
+  "main": "main.scss",
   "authors": [
     "Salem Ghoweri"
   ],
@@ -25,6 +25,7 @@
     "tests"
   ],
   "dependencies": {
+    "bower": "*",
     "breakpoint-sass": "^2.7.0",
     "modular-scale": "^2.1.3",
     "sanitize-css": "^5.0.0",
