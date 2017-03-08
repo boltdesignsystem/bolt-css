@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.org/pega-digital/pegakit-css.svg?branch=master)](https://travis-ci.org/pega-digital/pegakit-css)
+
+# PegaKit CSS
+**PegaKit's site-agnostic CSS Framework core.**
+
 <!--# Sky CSS Style Guide
 
 > Believe in Better CSS
