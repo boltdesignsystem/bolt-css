@@ -13,7 +13,7 @@
   * Shared...............Sensibly and tersely share some global commonalities
   *                      (particularly useful when managing vertical rhythm).
   */
-@import 'sanitize.css/sanitize.css';
+@import 'node_modules/sanitize.css/sanitize.css';
 @import 'generic.box-sizing';
 @import 'generic.font-stacks';
 @import 'generic.reset';

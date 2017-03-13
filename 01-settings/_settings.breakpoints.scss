@@ -2,7 +2,7 @@
    #BREAKPOINTS
    ========================================================================== */
 
-@import 'breakpoint-sass/stylesheets/breakpoint';
+@import 'node_modules/breakpoint-sass/stylesheets/breakpoint';
 
 $breakpoints: (
   'tiny'          '480px',
