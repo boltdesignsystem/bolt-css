@@ -2,7 +2,7 @@
    #TOKENS
    ========================================================================== */
 
-@import '01-settings/settings.colors.json';
-@import '02-tools/tools.color-palette';
+@import 'settings.colors.json';
+@import '../02-tools/tools.color-palette';
 
 $text-muted: rgba(palette(black), 0.5);
