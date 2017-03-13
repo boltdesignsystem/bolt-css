@@ -28,7 +28,9 @@
   * Visuallyhidden.......Mixin for visually hiding elements.
   */
 
+@import 'tools.sassy-maps';
 @import 'tools.button-color';
+@import 'tools.color-palette';
 @import 'tools.clearfix';
 @import 'tools.font-face';
 @import 'tools.font-family';
@@ -39,6 +41,7 @@
 @import 'tools.hyphenate';
 @import 'tools.inline-svg';
 @import 'tools.no-select';
+@import 'tools.sassy-maps';
 @import 'tools.strip-unit';
 @import 'tools.svg-icon';
 @import 'tools.text-contrast';

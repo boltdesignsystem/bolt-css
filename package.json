@@ -38,7 +38,6 @@
     "breakpoint-sass": "^2.7.1",
     "modularscale-sass": "^2.1.1",
     "sanitize.css": "^5.0.0",
-    "sassy-maps": "at-import/Sassy-Maps#0.x.x",
     "stylelint-scss": "^1.4.3",
     "stylelint-selector-bem-pattern": "^1.0.0"
   },
