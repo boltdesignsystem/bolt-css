@@ -35,7 +35,8 @@
   },
   "homepage": "https://github.com/pega-digital/pegakit-css#readme",
   "dependencies": {
-    
+    "stylelint-scss": "^1.4.3",
+    "stylelint-selector-bem-pattern": "^1.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.5",
@@ -52,8 +53,6 @@
     "postcss-cli": "^2.5.1",
     "pre-commit": "^1.2.2",
     "stylelint-config-guidelines": "^1.1.5",
-    "stylelint-scss": "^1.4.3",
-    "stylelint-selector-bem-pattern": "^1.0.0",
     "stylelint-selector-pattern": "0.0.1",
     "stylelint": "^7.9.0"
   },
