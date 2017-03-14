@@ -13,6 +13,15 @@
  * Demo: jsfiddle.net/inuitcss/u8pV3
  *
  */
+
+@include add-module(
+  $name:    'objects.island',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.global': '1.0.0'
+  )
+);
+
 %o-island,
 .o-island {
   @include clearfix();

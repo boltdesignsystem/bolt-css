@@ -7,6 +7,13 @@
  * occurring design pattern.
  */
 
+@include add-module(
+  $name:    'objects.block',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.global': '1.0.0'
+  )
+);
 
 $block-gutter:           $spacing-unit        !default;
 $block-gutter--tiny:     $spacing-unit * 0.25 !default;

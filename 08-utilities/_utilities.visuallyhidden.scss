@@ -2,6 +2,15 @@
    #VISUALLY HIDDEN UTILITIES
    ========================================================================== */
 
+@include add-module(
+  $name:    'utilities.visuallyhidden',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.breakpoints': '1.0.0',
+    'tools.visuallyhidden': '1.0.0'
+  )
+);
+
 .u-visuallyhidden {
   @include visuallyhidden();
 }

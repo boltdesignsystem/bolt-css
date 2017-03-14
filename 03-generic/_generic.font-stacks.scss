@@ -2,6 +2,14 @@
    #FONT STACKS
    ========================================================================== */
 
+@include add-module(
+  $name:    'generic.font-stacks',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.font-stacks': '1.0.0'
+  )
+);
+
 @include font-face('Open Sans', '/fonts/open-sans/light/opensans-light', 300);
 @include font-face('Open Sans', '/fonts/open-sans/regular/opensans-regular', 400);
 @include font-face('Open Sans', '/fonts/open-sans/italic/opensans-italic', 400, italic);

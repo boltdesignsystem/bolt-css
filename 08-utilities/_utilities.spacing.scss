@@ -2,6 +2,14 @@
    #SPACING UTILITIES
    ========================================================================== */
 
+@include add-module(
+  $name:    'utilities.spacing',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.global': '1.0.0'
+  )
+);
+
 //Forked from github.com/inuitcss/inuitcss/blob/develop/utilities/_utilities.spacing.scss //
 
 /**

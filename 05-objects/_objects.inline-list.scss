@@ -2,6 +2,12 @@
    #LIST-INLINE
    ========================================================================== */
 
+@include add-module(
+  $name:    'objects.inline-list',
+  $version: '1.0.0',
+  $dependencies: ()
+);
+
 /**
  * The inline-list object simply displays a list of items in one line.
  */

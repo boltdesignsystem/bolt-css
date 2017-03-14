@@ -2,6 +2,18 @@
    #FORM ELEMENTS
    ========================================================================== */
 
+@include add-module(
+  $name:    'elements.forms',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.global':      '1.0.0',
+    'settings.colors':      '1.0.0',
+    'tools.color-palette':  '1.0.0',
+    'tools.font-size':      '1.0.0',
+    'tools.font-weight':    '1.0.0'
+  )
+);
+
 input, select, textarea {
   @include font-size(base);
   transition: all 0.1s ease;
@@ -12,12 +24,12 @@ input, select, textarea {
   padding: 10px $spacing-unit;
 }
 
-input, select, textarea {
-  &:focus {
-    outline: 3px solid palette(blue);
-    background-color: palette(gray, lightest);
-    outline-offset: -3px;
-  }
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid palette(blue);
+  background-color: palette(gray, lightest);
+  outline-offset: -3px;
 }
 
 label {

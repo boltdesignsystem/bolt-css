@@ -2,6 +2,12 @@
    #RATIO OBJECT
    ========================================================================== */
 
+@include add-module(
+  $name:    'objects.ratio',
+  $version: '1.0.0',
+  $dependencies: ()
+);
+
 .o-ratio {
   position: relative;
   width: 100%;

@@ -3,6 +3,14 @@
    ========================================================================== */
 @import 'tools.strip-unit.scss';
 
+@include add-module(
+  $name:    'tools.font-size',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.modular-scale': '1.0.0'
+  )
+);
+
 /**
   * Abstracts how font sizes are grabbed and used via modular
   * typography sizes.

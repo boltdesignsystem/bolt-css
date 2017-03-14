@@ -2,6 +2,14 @@
    #RESPONSIVE HIDE UTILITIES
    ========================================================================== */
 
+@include add-module(
+  $name:    'utilities.hide',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.breakpoints': '1.0.0'
+  )
+);
+
 .u-hide {
   display: none unquote('!important');
 }

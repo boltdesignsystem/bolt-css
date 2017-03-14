@@ -7,6 +7,15 @@
   * in and outputs the background-image with the correct start and
   * end gradient values.
   */
+
+@include add-module(
+  $name:    'tools.linear-gradient',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.gradients': '1.0.0'
+  )
+);
+
 @mixin linear-gradient($swatch, $important: '') {
   $gradient: map-get(map-get($gradients, gradients), $swatch);
   $start: map-get($gradient, 'start');
@@ -28,6 +37,14 @@
   @return linear-gradient(45deg, $start, $end);
 }
 
+
+@include add-module(
+  $name:    'tools.radial-gradient',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.gradients': '1.0.0'
+  )
+);
 
 /**
   * Radial gradient generator. Identical in concept to the linear

@@ -6,6 +6,14 @@
   * Abstracts how font family stacks are applied based on async font loading.
   */
 
+@include add-module(
+  $name:    'tools.font-family',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.font-stacks':   '1.0.0'
+  )
+);
+
 @mixin font-family($family, $is-root: false, $weight: null) {
   @if ( length($family) and type-of(map-get-deep($font-stacks, $family, 'font-family')) == string ) {
 

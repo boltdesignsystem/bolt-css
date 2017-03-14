@@ -2,6 +2,14 @@
    #WRAPPER OBJECT
    ========================================================================== */
 
+@include add-module(
+  $name:    'objects.wrapper',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.global':     '1.0.0',
+  )
+);
+
 %o-wrapper,
 .o-wrapper {
   max-width: $global-page-max-width;

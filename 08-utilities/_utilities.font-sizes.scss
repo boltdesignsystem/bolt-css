@@ -2,6 +2,14 @@
    #FONT SIZE UTILITIES
    ========================================================================== */
 
+@include add-module(
+  $name:    'utilities.font-size',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.modular-scale': '1.0.0'
+  )
+);
+
 
 $font-sizes: map-get($modular-scale, 'font_sizes');
 

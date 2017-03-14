@@ -7,10 +7,17 @@
   * http://www.modularscale.com/?16&px&1.2&sass&text
   */
 
+@import 'modularscale-sass/stylesheets/modular-scale';
+
+@include add-module(
+  $name:    'settings.modular-scale',
+  $version: '1.0.0',
+  $dependencies: ()
+);
+
 $ms-base: 1rem;
 $ms-ratio: 1.2;
 
-@import 'modularscale-sass/stylesheets/modular-scale';
 
 $modular-scale: (
   'font_sizes': (

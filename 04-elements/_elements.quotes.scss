@@ -2,6 +2,16 @@
    #QUOTES
    ========================================================================== */
 
+@include add-module(
+  $name:    'elements.quotes',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.global':     '1.0.0',
+    'tools.font-size':     '1.0.0',
+    'tools.color-palette': '1.0.0',
+  )
+);
+
 q {
   font-style: italic;
 }

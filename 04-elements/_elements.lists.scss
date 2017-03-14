@@ -2,6 +2,16 @@
    #LISTS
    ========================================================================== */
 
+@include add-module(
+  $name:    'elements.lists',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.global':   '1.0.0',
+    'tools.font-weight': '1.0.0',
+    'tools.font-size':   '1.0.0'
+  )
+);
+
 ul,
 ol {
   padding-left: $spacing-unit-small;

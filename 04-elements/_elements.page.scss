@@ -2,6 +2,16 @@
    #PAGE
    ========================================================================== */
 
+@include add-module(
+  $name:    'elements.page',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.global':   '1.0.0',
+    'tools.font-family': '1.0.0',
+    'tools.font-weight': '1.0.0'
+  )
+);
+
 /** <html> and <body> tag base styles **/
 
 /**

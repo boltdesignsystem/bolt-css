@@ -2,6 +2,16 @@
    #UI-LIST OBJECT
    ========================================================================== */
 
+@include add-module(
+  $name:    'objects.ui-list',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.global':     '1.0.0',
+    'settings.colors':     '1.0.0',
+    'tools.color-palette': '1.0.0'
+  )
+);
+
 /**
  * The UI list object creates blocky list items with a separator between each
  * item

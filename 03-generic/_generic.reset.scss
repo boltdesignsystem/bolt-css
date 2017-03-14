@@ -2,6 +2,12 @@
    #RESET
    ========================================================================== */
 
+@include add-module(
+  $name:    'generic.reset',
+  $version: '1.0.0',
+  $dependencies: ()
+);
+
 /**
  * A very simple reset that sits on top of Normalize.css.
  */

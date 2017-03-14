@@ -6,6 +6,13 @@ $flag-gutter:         $spacing-unit !default;
 $flag-gutter--small:  $spacing-unit / 2 !default;
 $flag-gutter--large:  $spacing-unit * 2 !default;
 
+@include add-module(
+  $name:    'objects.flag',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.global':      '1.0.0'
+  )
+);
 
 %o-flag,
 .o-flag {

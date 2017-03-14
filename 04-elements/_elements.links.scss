@@ -2,6 +2,14 @@
    #LINKS
    ========================================================================== */
 
+@include add-module(
+  $name:    'elements.links',
+  $version: '1.0.0',
+  $dependencies: (
+    'tools.color-palette': '1.0.0'
+  )
+);
+
 a {
   color: palette(blue);
   text-decoration: none;

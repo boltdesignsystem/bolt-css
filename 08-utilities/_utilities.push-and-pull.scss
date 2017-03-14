@@ -7,6 +7,14 @@
  * influenced by inuitcss.
  */
 
+@include add-module(
+  $name:    'utilities.push-and-pull',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.breakpoints': '1.0.0'
+  )
+);
+
 
 [class*='u-push-'] { position: relative; }
 [class*='u-pull-'] { position: relative; }

@@ -6,6 +6,12 @@
  * Small utility classes to help with floating.
  */
 
+@include add-module(
+  $name:    'utilities.floats',
+  $version: '1.0.0',
+  $dependencies: ()
+);
+
 .u-float-left {
   float: left unquote('!important');
 }

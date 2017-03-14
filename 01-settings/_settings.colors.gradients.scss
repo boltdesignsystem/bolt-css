@@ -10,6 +10,13 @@
   * end   = darker color
   */
 
+@include add-module(
+  $name:    'settings.gradients',
+  $version: '1.0.0',
+  $dependencies: ()
+);
+
+
 $gradients: (
   gradients: (
     'decisionHub': (

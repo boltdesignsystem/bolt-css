@@ -2,6 +2,12 @@
    #FONT-WEIGHT
    ========================================================================== */
 
+@include add-module(
+  $name:    'tools.font-weight',
+  $version: '1.0.0',
+  $dependencies: ()
+);
+
 @mixin font-weight($font-weight) {
   @if ($font-weight == 'light') {
     font-weight: 300;

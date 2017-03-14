@@ -8,6 +8,14 @@
 
 @import 'tools.sassy-maps'; //So map-get-deep works
 
+@include add-module(
+  $name:    'tools.color-palette',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.colors': '1.0.0'
+  )
+);
+
 @function palette($palette, $tone: 'base') {
   @return map-get-deep($palettes, 'colors', $palette, $tone);
 }

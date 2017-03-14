@@ -2,6 +2,16 @@
    #TABLES
    ========================================================================== */
 
+@include add-module(
+  $name:    'elements.tables',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.global':     '1.0.0',
+    'tools.color-palette': '1.0.0',
+    'tools.font-weight':   '1.0.0',
+  )
+);
+
 table {
   border-collapse: collapse;
   border-spacing: 0;

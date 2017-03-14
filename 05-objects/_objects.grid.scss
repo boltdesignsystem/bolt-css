@@ -2,6 +2,14 @@
    #GRID
    ========================================================================== */
 
+@include add-module(
+  $name:    'objects.grid',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.global': '1.0.0'
+  )
+);
+
 %o-grid,
 .o-grid {
   margin: 0;

@@ -2,6 +2,14 @@
    #RESPONSIVE WIDTH UTILITIES
    ========================================================================== */
 
+@include add-module(
+  $name:    'utilities.widths',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.breakpoints': '1.0.0'
+  )
+);
+
 // A mixin to spit out our width classes. Pass in the columns we want the widths
 // to have, and an optional suffix for responsive widths. E.g. to create thirds
 // and quarters for a small breakpoint:

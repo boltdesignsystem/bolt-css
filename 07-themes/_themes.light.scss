@@ -7,6 +7,15 @@
   * darker text inside that container.
   */
 
+@include add-module(
+  $name:    'themes.light',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.colors':     '1.0.0',
+    'tools.color-palette': '1.0.0',
+  )
+);
+
 .t-light {
   color: palette(black);
   background-color: palette(gray, lightest);

@@ -2,6 +2,12 @@
    #VISUALLYHIDDEN MIXIN
    ========================================================================== */
 
+@include add-module(
+  $name:    'tools.visuallyhidden',
+  $version: '1.0.0',
+  $dependencies: ()
+);
+
 @mixin visuallyhidden($focusable: true) {
   position: absolute;
   overflow: hidden;

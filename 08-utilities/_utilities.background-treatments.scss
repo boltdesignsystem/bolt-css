@@ -2,6 +2,15 @@
    #BACKGROUND TREATMENTS
    ========================================================================== */
 
+@include add-module(
+  $name:    'utilities.background-treatments',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.colors':     '1.0.0',
+    'tools.color-palette': '1.0.0',
+  )
+);
+
 //Nudge the background treatment to the top for art direction.
 .u-background-alignment-top {
   background-position: 50% 10% unquote('!important');

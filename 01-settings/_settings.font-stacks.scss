@@ -2,6 +2,12 @@
    #FONT STACKS
    ========================================================================== */
 
+@include add-module(
+  $name:    'settings.font-stacks',
+  $version: '1.0.0',
+  $dependencies: ()
+);
+
 $font-stacks: (
   'heading': (
     font-family: '"Exo 2", Verdana, Tahoma, Segoe, sans-serif',

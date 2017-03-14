@@ -2,6 +2,15 @@
    #DARK THEME
    ========================================================================== */
 
+@include add-module(
+  $name:    'themes.dark',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.colors':     '1.0.0',
+    'tools.color-palette': '1.0.0',
+  )
+);
+
 /**
   * When you have a dark background / background image and want to have lighter
   * text inside that container.

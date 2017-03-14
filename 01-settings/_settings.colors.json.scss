@@ -2,6 +2,12 @@
    #COLOR PALETTES
    ========================================================================== */
 
+@include add-module(
+  $name:    'settings.colors',
+  $version: '1.0.0',
+  $dependencies: ()
+);
+
 $palettes: (
   colors: (
     red: (

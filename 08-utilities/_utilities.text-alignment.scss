@@ -2,6 +2,14 @@
    #TEXT-ALIGNMENT UTILITIES
    ========================================================================== */
 
+@include add-module(
+  $name:    'utilities.text-alignment',
+  $version: '1.0.0',
+  $dependencies: (
+    'settings.global': '1.0.0'
+  )
+);
+
 /**
  * Text align left.
  */

@@ -1,16 +1,14 @@
 /* ==========================================================================
-   #SVG-ICON
+   #MODULE MANAGER
    ========================================================================== */
 
-$images_path:     '/images/';
-$svg_sprite_name: 'icons.svg';
+@import 'sass-versioning/dist/index';
+@import 'module-manager/tools.to-list';
+@import 'module-manager/tools.add-modules';
+@import 'module-manager/tools.check-modules';
 
 @include add-module(
-  $name:    'tools.svg-icon',
+  $name:    'settings.vendor',
   $version: '1.0.0',
   $dependencies: ()
 );
-
-@function svg-icon($name) {
-  @return unquote('url("' + $images_path + $svg_sprite_name + '#' + $name + '")');
-}

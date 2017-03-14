@@ -4,6 +4,13 @@
 
 @import 'breakpoint-sass/stylesheets/breakpoint';
 
+@include add-module(
+  $name:    'settings.breakpoints',
+  $version: '1.0.0',
+  $dependencies: ()
+);
+
+
 $breakpoints: (
   'tiny'          '480px',
   'small'         '720px',
