@@ -44,7 +44,6 @@
         ],
       },
     ],
-    'declaration-block-no-redundant-longhand-properties': true,
     'declaration-block-no-shorthand-property-overrides': true,
     'declaration-block-semicolon-newline-after': 'always',
     'declaration-block-semicolon-space-after': 'always-single-line',
@@ -82,8 +81,9 @@
       2,
       {
         ignore: [
-          'blockless-at-rules',
+          'blockless-at-rules'
         ],
+        ignoreAtRules: ['supports', 'if']
       },
     ],
     'media-feature-colon-space-after': 'always',
@@ -143,7 +143,6 @@
     'selector-pseudo-element-no-unknown': true,
     'selector-type-case': 'lower',
     'selector-type-no-unknown': true,
-    'shorthand-property-no-redundant-values': true,
     'string-no-newline': true,
     'string-quotes': 'single',
     'time-min-milliseconds': 10,
