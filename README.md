@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/pega-digital/pegakit-css.svg?branch=master)](https://travis-ci.org/pega-digital/pegakit-css)
 
 # PegaKit CSS
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/pega-digital/pegakit-css.svg)](https://greenkeeper.io/)
 **PegaKit's site-agnostic CSS Framework core.**
 
 <!--# Sky CSS Style Guide
